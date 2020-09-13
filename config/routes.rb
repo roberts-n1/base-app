@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  # resources :pages
-  # root to: 'pages#index'
-
   scope ':locale', locale: /#{I18n.available_locales.join('|')}/ do
     resources :pages
     root to: 'pages#index'
