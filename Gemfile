@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -51,4 +53,8 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem 'haml', '~> 5.1', '>= 5.1.2'
+gem 'haml_lint', require: false
+gem 'overcommit', '~> 0.55.0'
+gem 'rubocop', '~> 0.90.0'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
