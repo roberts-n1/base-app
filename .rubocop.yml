@@ -1,0 +1,14 @@
+Style/Documentation:
+  Enabled: false
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'test/**/*'
+    - 'app/channels/*'
+    - 'node_modules/node-sass/src/**/*'
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'bin/{rails,rake}'
+    - !ruby/regexp /old_and_unused\.rb$/
